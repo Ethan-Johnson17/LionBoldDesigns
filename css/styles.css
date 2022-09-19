@@ -118,6 +118,25 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   height: 125px;
 }
 
+@media (max-width: 1000px) {
+  .headerLogo {
+    height: 40px;
+  }
+
+    .LBFont {
+      font-size: 26px !important;
+    }
+
+    .navbar-brand {
+      margin-right: 0px !important;
+    }
+
+    /* #navbar {
+      display: flex;
+      justify-content: left;
+    } */
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
