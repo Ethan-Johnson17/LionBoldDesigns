@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #006784;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -236,6 +236,10 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
+}
+
+:hover.text-lbdSecondary {
+  color: #003543;
 }
 
 small, .small {
@@ -4546,7 +4550,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -11541,3 +11545,63 @@ header.masthead h1, header.masthead .h1 {
 .sizing {
   height: 215px;
 }
+
+.customCarousel {
+
+}
+
+#product1 {
+  z-index: 0;
+  width: 25rem;
+  position: relative;
+  top: 1.5rem;
+  left: 5rem;
+  transition: 500ms;
+}
+
+#product2 {
+  z-index: 500;
+  width: 30rem;
+  transition: 500ms;
+}
+
+#product3 {
+  z-index: 0;
+  width: 25rem;
+  position: relative;
+  top: 1.5rem;
+  right: 5rem;
+  transition: 500ms;
+}
+
+:hover#product1 {
+  z-index: 1000;
+  width: 45rem;
+  position: relative;
+  top: 1.5rem;
+  left: 5rem;
+  transition: 500ms;
+}
+
+:hover#product2 {
+  z-index: 500;
+  width: 40rem;
+  position: relative;
+  top: -1.5rem;
+  right: 5rem;
+  transition: 500ms;
+}
+
+:hover#product3 {
+  transition: 500ms;
+  z-index: 1000;
+  width: 40rem;
+  position: relative;
+  top: -1.5rem;
+  right: 5rem;
+}
+
+#product1Body {
+  transform: translateY(-3rem);
+}
+
