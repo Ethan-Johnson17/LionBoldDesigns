@@ -57,3 +57,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// const link = document.querySelector('.blog');
+// link?.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     window.open(link.href, '_blank');
+// })
+
+function visitLink(link) {
+   window.open('https://www.' + link, '_blank');
+}
